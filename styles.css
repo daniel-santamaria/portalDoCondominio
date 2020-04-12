@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,500,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+.container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    height: 64px;
+}
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 64px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.12);
+    display: flex;
+}
+
+header div a img.logo-full {
+    height: 48px;
+    display: flex;
+}
+
+.container-nav-bar-options-icon {
+    display: flex;
+}
+
+header div ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-transform: uppercase;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+header div ul li a {
+    text-decoration: none;
+    color: #3B3B3B;
+    margin-left: 48px;
+}
+
+.nav-bar-login {
+    padding: 8px 16px;
+    border-radius: 18px;
+    border: 1px solid #3B3B3B;
+}
+
+.nav-bar-login:hover {
+    transition-duration: 0.4s;
+    background-color: #3B3B3B;
+    color: #ffffff
+}
+
+/* / HEADER */
+
+/* MAIN */
+
+section {
+    border: 1px solid black;
+    padding-top: 64px;
+    height: 100vh;
+    /* background-image: url('./assets/28757.jpg');
+    background-size: 100%; */
+    padding-bottom: 32px;
+}
+
+.container-section {
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1140px;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-landing-text {
+    border: 1px solid magenta;
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.125);
+    border-radius: 8px;
+}
+
+h1 {
+    border: 1px solid red;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+}
+
+h2 {
+    border: 1px solid red;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    margin: 40px 0;
+    font-weight: 500;
+}
+
+.container-cta {
+    border: 1px solid red;
+    display: flex;
+}
+
+.call-to-action {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    background: linear-gradient(90deg, #7AA355 0%, #EFAE50 100%);
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 48px;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.125);
+}
+
+.call-to-action:hover {
+    transition-duration: 0.2s;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.20);
+}
+
+#about, #contact {
+    background: #EFAE50;
+}
+
+.container-landing-img {
+    border: 1px solid magenta;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.landing-img {
+    width: 100%;
+}
+
+/* RESPONSIVIDADE */
+
+@media (min-width: 725px) {
+    .container-nav-bar-options-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 725px) {
+    .nav-bar-option {
+        display: none;
+    }
+    header div ul li a {
+        margin-left: 16px;
+    }
+    .nav-bar-login {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 426px) {
+    header div a img.logo-full {
+        height: 40px;
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+    h1, h2 {
+        text-align: center;
+    }
+
+    .container-landing-text {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .container-landing-img {
+        width: 100%;
+    }
+
+    .container-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-section {
+        flex-direction: column;
+        padding: 64px 0;
+    }
+}
