@@ -11,7 +11,7 @@
     <body>
         <header>
             <div class="container-header">
-                <a href="#">
+                <a href="#landing">
                     <img class="logo-full" src="assets/logo-original.svg" alt="Portal do Condomínio">
                 </a>
                 <ul>
@@ -20,7 +20,7 @@
                     <li class="nav-bar-option"><a href="#contact">Contato</a></li>
                     <li><a class="nav-bar-login" href="login.html">Login</a></li>
                     <li >
-                        <a class="container-nav-bar-options-icon" href="#">
+                        <a class="container-nav-bar-options-icon" href="#landing">
                             <img src="assets/options-icon.svg" alt="options-icon">
                         </a>
                     </li>
@@ -29,39 +29,43 @@
         </header>
         <main>
             <div class="parallax">
-                <section class="parallax__layer parallax__layer--back"></section>
-                <section id="#" class="parallax__layer parallax__layer--base">                                
-                    <div class="container-section">
-                        <div class="container-landing-text">
-                            <h1>O melhor do seu condomínio a um toque de distância</h1>
-                            <h2>Explore diversas soluções que irão trazer facilidade para sua vida diária e experiências inesquecíveis com seus vizinhos</h2>
-                            <div class="container-cta">
-                                <a class="call-to-action" href="#">Agende uma demonstração</a>
-                            </div>     
-                        </div>
-                        <div class="container-landing-content">
-                        <!-- espaço opcional para veiculação de conteúdo adicional -->
+                <section id="landing" class="parallax__group">
+                    <div class="parallax__layer parallax__layer--back">
+                        <!-- background configurado no CSS -->
+                    </div>
+                    <div class="parallax__layer parallax__layer--base">
+                        <div class="container-section">
+                            <div class="container-landing-text">
+                                <h1>O melhor do seu condomínio a um toque de distância</h1>
+                                <h2>Explore diversas soluções que irão trazer facilidade para sua vida diária e experiências inesquecíveis com seus vizinhos</h2>
+                                <div class="container-cta">
+                                    <a class="call-to-action" href="#">Agende uma demonstração</a>
+                                </div>     
+                            </div>
                         </div>
                     </div>
-                    <section id="about">
+                </section>
+                <section id="about" class="parallax__group">
+                    <div class="parallax__layer parallax__layer--base">
                         <div class="container-section">
                             <h1>O Portal</h1>
                         </div>
-                    </section>
-    
-                    <section id="solutions">
+                    </div>
+                </section>
+                <section id="solutions" class="parallax__group">
+                    <div class="parallax__layer parallax__layer--base">   
                         <div class="container-section">
                             <h1>Soluções</h1>
                         </div>
-                    </section>
-    
-                    <section id="contact">
+                    </div>
+                </section>
+                <section id="contact" class="parallax__group">
+                    <div class="parallax__layer parallax__layer--base">
                         <div class="container-section">
                             <h1>Contato</h1>
                         </div>
-                    </section>
+                    </div>
                 </section>
-                
             </div>
         </main>
         <footer>
