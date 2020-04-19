@@ -53,9 +53,9 @@ a:hover {
 }
 
 /* Configurado para não ter altura fixa */
-.parallax__group--about {
+.parallax__group--about,
+.parallax__group--contact {
     height: auto;
-    
 }
 
 .parallax__layer {
@@ -66,8 +66,9 @@ a:hover {
     left: 0;
 }
 
-/* Ajustado para exibir todo o conteúdo conforme group--about */
-.parallax__layer--about {
+/* Ajustado para exibir todo o conteúdo */
+.parallax__layer--about,
+.parallax__layer--contact {
     position: static;
 }
 
@@ -79,13 +80,18 @@ a:hover {
 }
 
 .parallax__layer--base {
-    padding-top: 96px;
+    padding-top: 80px;
     padding-bottom: 32px;
     transform: translateZ(0);
 }
 
 .parallax__layer--base--about {
     background-color: #fff;
+    box-shadow: 0 8px 16px 16px rgba(0,0,0,0.25);
+}
+
+.parallax__layer--base--contact {
+    background-color: #3B3B3B;
     box-shadow: 0 8px 16px 16px rgba(0,0,0,0.25);
 }
 
@@ -112,9 +118,11 @@ a:hover {
     height: 100%;
 }
 
-.custom-container--about {
+.custom-container--about,
+.custom-container--contact {
     align-items: stretch;
 }
+
 
 /* Header */
 
@@ -172,9 +180,9 @@ header {
     transition-duration: 0.4s;
 }
 
-/* MAIN */
+/* Main */
 
-/* LANDING */
+/* Landing */
 
 .box {
     display: flex;
@@ -183,10 +191,15 @@ header {
     padding: 32px;
 }
 
+.box--contact {
+    padding: 32px 32px 32px 0;
+}
+
 .box--landing {
     background-color: #ffffff;
     box-shadow: 16px 16px 16px rgba(0,0,0,0.25);
     border-radius: 8px;
+    margin-top: 40px;
 }
 
 .title-landing {
@@ -228,7 +241,7 @@ header {
     transition-duration: 0.2s;
 }
 
-/* ABOUT */
+/* About */
 
 .about-subsection {
     display: flex;
@@ -286,40 +299,77 @@ header {
 
 /* Contact */
 
-#contact {
-    background-color: #7AA355;
-    box-shadow: 0 -8px 16px rgba(0,0,0,0.25);
-}
-
-.contato-title {
-    color: #ffffff;
-}
-
-.screen-image-contact {
-    width:auto;
+.contact-subsection {
     display: flex;
-    margin: 0 auto;
+    width: 100%
 }
 
-form {
-    padding: 16px 16px;
-    box-shadow: 16px 16px 16px rgba(0,0,0,0.25);
-    margin: 0;
+.title-contact {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    width: 100%;
+}
+
+#name,
+#email,
+#message {
+    border-radius: 24px;
+}
+
+#emailHelp {
+    color: #fff !important;
+    font-size: 14px;
+    margin: 4px 16px;
+}
+
+.custom-control {
+    color: #fff;
+    margin: 16px 16px;
 }
 
 button {
-    background-color: #EFAE50 !important;
     border: none !important;
+    background-color: #7aa355 !important;
+    color: #fff !important;
     text-transform: uppercase !important;
+    padding: 8px 16px !important;
+    border-radius: 48px !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 18px !important;
+    margin: 16px auto !important;
 }
 
-.submit-container {
+.other-contact-title {
+    
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contact-channel {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    width: 66%;
+    margin: 12px auto;
 }
 
+.contact-icon{
+    display: flex;
+    color: #fff;
+    margin-right: 16px;
+}
 
-
+.contact-email,
+.contact-whatsapp {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
 /* footer {
     width: 100%;
     height: 40px;
@@ -353,7 +403,12 @@ button {
         width: 80%;
     }
 
-    .title-landing {
+    .box--contact {
+        padding-left: 32px;
+    }
+
+    .title-landing,
+    .title-contact {
         font-size: 32px;
         text-align: center;
     }
@@ -366,7 +421,8 @@ button {
         align-self: center;
     }
 
-    .about-subsection {
+    .about-subsection,
+    .contact-subsection {
         flex-direction: column;
         align-items: center;
     }
@@ -386,8 +442,22 @@ button {
     }
 
     .image-about {
-        width: 80%;
+        width: 88%;
         margin-bottom: 24px;
         padding: 0;
+    }
+
+    .contact-channel {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .contact-icon {
+        margin: 4px 0;
+    }
+    
+    .contact-email,
+    .contact-whatsapp {
+        font-size: 16px;
     }
 }
