@@ -73,7 +73,7 @@ a:hover {
 }
 
 .parallax__layer--back {
-    background-image: url('./assets/28757.jpg');
+    background-image: url('./assets/pdc-background.jpg');
     background-size: contain;
     background-position-x: 50vw;
     transform: translateZ(-1px) scale(2);
