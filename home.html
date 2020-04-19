@@ -10,20 +10,20 @@
     </head>
     <body>
         <header>
-            <div class="custom-container-header">
-                <a class="header-icons d-md-none" href="#menu">
+            <div class="custom-container custom-container--header">
+                <a class="header__icon d-md-none" href="#menu">
                     <i class="material-icons" style="font-size:40px;">menu</i>
                 </a>
                 <a href="#landing">
                     <img class="logo-full" src="assets/logo-original.svg" alt="Portal do Condomínio">
                 </a>
-                <ul class="nav-bar-options d-none d-md-flex">
-                    <li><a class="nav-bar-option" href="#about">O Portal</a></li>
-                    <li><a class="nav-bar-option" href="#solutions">Soluções</a></li>
-                    <li><a class="nav-bar-option" href="#contact">Contato</a></li>
-                    <li><a class="nav-bar-option nav-bar-option--login" href="login.html">Login</a></li>
+                <ul class="header__menu d-none d-md-flex">
+                    <li><a class="menu__option" href="#about">O Portal</a></li>
+                    <li><a class="menu__option" href="#solutions">Soluções</a></li>
+                    <li><a class="menu__option" href="#contact">Contato</a></li>
+                    <li><a class="menu__option menu__option--login" href="login.html">Login</a></li>
                 </ul>
-                <a class="header-icons d-md-none" href="login.html">
+                <a class="header__icon d-md-none" href="login.html">
                     <i class="material-icons-outlined" style="font-size:40px;">account_circle</i>
                 </a>
             </div>
@@ -31,69 +31,55 @@
         <main>
             <div class="parallax">
                 <section id="landing" class="parallax__group">
-                    <div class="parallax__layer parallax__layer--back">
-                        <!-- background configurado no CSS -->
-                    </div>
+                    <div class="parallax__layer parallax__layer--back"></div>
                     <div class="parallax__layer parallax__layer--base">
-                        <div class="custom-container custom-container-landing">
-                            <div class="container-landing-text">
-                                <h1 class="landing-title">O melhor do seu condomínio a um toque de distância</h1>
-                                <h2 class ="landing-subtitle">Explore diversas soluções que irão trazer facilidade para sua vida diária e experiências inesquecíveis com seus vizinhos</h2>
-                                <div class="container-cta">
-                                    <a class="call-to-action" href="#">Agende uma demonstração</a>
-                                </div>     
+                        <div class="custom-container custom-container--landing">
+                            <div class="box box--landing">
+                                <h1 class="title-landing">O melhor do seu condomínio a um toque de distância</h1>
+                                <h2 class ="subtitle-landing">Explore diversas soluções que irão trazer facilidade para sua vida diária e experiências inesquecíveis com seus vizinhos</h2>
+                                <a class="call-to-action call-to-action--landing" href="#">Agende uma demonstração</a>
                             </div>
                         </div>
                     </div>
                 </section>
-
-                <section id="about" class="parallax__group--about">
-                    <div class="parallax__layer--about parallax__layer--base--about">
-                        <div class="custom-container--about">
-                            
+                <section id="about" class="parallax__group parallax__group--about">
+                    <div class="parallax__layer parallax__layer--about parallax__layer--base parallax__layer--base--about">
+                        <div class="custom-container custom-container--about">
                             <div class="about-subsection">
-                                <div class="container-about-text">
-                                <h2 class="about-title">Painel Administrativo</h2>
-                                <h3 class="about-subtitle">Um ambiente virtual ágil e transparente de comunicação e gestão para todo o condomínio</h3>
-                                <p class="about-content">O Portal possibilita que os condôminos administrem o cadastro de moradores e prestadores de serviços, sejam notificados sobre correspondências e encomendas e fiquem por dentro de todas as novidades do condomínio, entre muitas outras facilidades.</P>
-                                <p class="about-content">Para o administrador, garante um canal seguro, organizado e eficiente de comunicação e centralização de demandas.</p>
+                                <div class="box">
+                                    <h2 class="title-about">Painel Administrativo</h2>
+                                    <h3 class="subtitle-about">Um ambiente virtual ágil e transparente de comunicação e gestão para todo o condomínio</h3>
+                                    <p class="content-about">
+                                        O Portal possibilita que os condôminos administrem o cadastro de moradores e prestadores de serviços, 
+                                        sejam notificados sobre correspondências e encomendas e fiquem por dentro de todas as novidades do condomínio, 
+                                        entre muitas outras facilidades.
+                                        <br>
+                                        Para o administrador, garante um canal seguro, organizado e eficiente de comunicação e centralização de demandas.
+                                    </p>
                                 </div>
-                                <div class="container-about-img">
-                                    <img class="screen-image" src="assets/screen.png" alt="Screen">
-                                </div>
+                                <img class="image-about" src="assets/screen.png" alt="Screen">
                             </div>
-                      
+                            <hr>
                             <div class="about-subsection">
-                                <div class="container-about-img">
-                                    <img class="screen-image" src="assets/service-detail.png" alt="Service Detail">
-                                </div>
-                                <div class="container-about-text">
-                                <h2 class="about-title">Vizinhança e Classificados</h2>
-                                <h3 class="about-subtitle">Integração e boas experiências para a vizinhança</h3>
-                                <p class="about-content">Como diferencial, a plataforma dispõe de uma seção exclusiva para que os condôminos ofereçam seus serviços, criando um ecossistema de trocas e integração.</p>
+                                <img class="image-about" src="assets/service-detail.png" alt="Service Detail">
+                                <div class="box">
+                                    <h2 class="title-about">Vizinhança e Classificados</h2>
+                                    <h3 class="subtitle-about">Integração e boas experiências para a vizinhança</h3>
+                                    <p class="content-about">Como diferencial, a plataforma dispõe de uma seção exclusiva para que os condôminos ofereçam seus serviços, criando um ecossistema de trocas e integração.</p>
                                 </div>        
                             </div>
-                            
-                            <div class="about-subsection-cta">
-                                <div class="container-about-text-cta">
-                                <p class="about-content-cta">Cuide da sua casa de onde estiver, em um computador no conforto do seu lar ou em seu smartphone</p>
-                                </div>
-                                <div class="container-cta-about">
-                                    <a class="call-to-action" href="#">Agende uma demonstração</a>
-                                </div> 
-                            </div>
-
+                            <hr>
+                            <p class="content--cta">
+                                Cuide da sua casa de onde estiver, em um computador no conforto do seu lar ou em seu smartphone
+                            </p>
+                            <a class="call-to-action call-to-action--about" href="#">Agende uma demonstração</a>
                         </div>
-    
-                        </div>
+                    </div>
                 </section>
 
-                <section id="mirror" class="parallax__group">
+                <section id="window" class="parallax__group">
                     <div class="parallax__layer parallax__layer--back">
                         <!-- background configurado no CSS -->
-                    </div>
-                    <div class="parallax__layer parallax__layer--base">
-                        <!-- Mirror to background -->
                     </div>
                 </section>
                 <!-- <section id="solutions" class="parallax__group">
